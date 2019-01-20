@@ -31,7 +31,7 @@ header {
     width: 960px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    margin: 40px 15% 40px 15%;
+    margin: 40px 15% 80px 15%;
 }
 
 h1 {
@@ -58,12 +58,14 @@ footer {
     background-color: #666666;
     width: 100%;
     color: #cccccc;
-    position: absolute; 
-    left: 0 ; right: 0; bottom: 0; 
+    position: fixed;
+    left: 0;
+    bottom: 0; 
     height: 45px;
     border-top: 8px solid #4aaaa5;
     text-align: center;
     font-size: 12px;
+
 }
 
 #container {
@@ -146,12 +148,62 @@ input[type=text], textarea {
     cursor: pointer;
   }
 
-  /* CSS FOR CONTACT PAGE */
-
-  
-
   #message {
       height: 200px;
       resize: vertical;
       overflow: auto;
+  }
+
+    /* CSS FOR PORTFOLIO PAGE */
+
+    h2 {
+        background-color: #4aaaa5;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        height: 20px;
+        padding: 12.5px;
+        position: relative;
+        top: 110px;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: unset;
+        text-align: center;
+    }
+
+  .box-set {
+    position: relative;
+    height: 675px;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    /* relative positioning */
+    position: absolute;
+    margin: 20px;
+    width: 268px;
+    height: 176px;
+  }
+  
+  .box-1 {
+    background-image: url("../images/portfolio-1.jpg");
+  }
+  
+  .box-2 {
+    background-image: url("../images/portfolio-2.jpg");
+    left: 300px;
+  }
+  
+  .box-3 {
+    background-image: url("../images/portfolio-3.jpg");
+    top: 225px;
+  }
+
+  .box-4 {
+    background-image: url("../images/portfolio-4.jpg");
+    top: 225px;
+    left: 300px;
+  }
+
+  .box-5 {
+    background-image: url("../images/portfolio-5.jpg");
+    top: 450px;
   }
